@@ -1,6 +1,6 @@
 ## About:
 A Web Application with a modern mobile view, created to help, educate and share information and stats with the public
-community about the Coronavirus pendemic.
+community about the Coronavirus pandemic.
 ------------------------------------------------
 
 ## Used Technologies:
