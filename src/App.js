@@ -10,6 +10,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
+
       <NavBar />
 
       <Route exact path='/' component={Home} />
