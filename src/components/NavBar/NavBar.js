@@ -34,7 +34,7 @@ export default function NavBar() {
     right: false,
   });
 
-  const toggleDrawer = (anchor, open) => (event) => {
+  const toggleDrawer = (anchor, open) => event => {
     if (
       event &&
       event.type === 'keydown' &&
@@ -46,13 +46,13 @@ export default function NavBar() {
     setState({ ...state, [anchor]: open });
   };
 
-  const link = (index) => {
+  const link = index => {
     if (index === 0) return '/';
     if (index === 1) return '/countries';
     return '/useful-info';
   };
 
-  const list = (anchor) => (
+  const list = anchor => (
     <div
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'top' || anchor === 'bottom',
@@ -103,9 +103,10 @@ export default function NavBar() {
             <li>Home</li>
           </NavLink>
 
-          <NavLink to='/countries'>
+          {/* still working to get the API work */}
+          {/* <NavLink to='/countries'>
             <li>Stats By Country</li>
-          </NavLink>
+          </NavLink> */}
 
           <NavLink to='/useful-info'>
             <li>Useful Info</li>
